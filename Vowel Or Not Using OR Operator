@@ -1,0 +1,31 @@
+/* Write a program that inputs a character and displays whether it is a vowel or not. */
+
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class VowelOrConsonant 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		char ch ;
+		
+		System.out.print( "Enter a character : " );
+		ch = scanner.next().charAt(0);
+		
+		if ( ch == 'A' || ch == 'a' || ch == 'E' || ch == 'e' || ch == 'I' || ch == 'i' || ch == 'O' || ch == 'o' || ch == 'U' || ch == 'u' )
+		{
+			System.out.println( "Entered Character is a Vowel" );
+		}
+		
+		else
+		{
+			System.out.println( "Entered Character is not a Vowel" );
+		}
+		
+		scanner.close();
+		
+	}
+}
