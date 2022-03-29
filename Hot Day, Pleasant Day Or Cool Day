@@ -1,0 +1,39 @@
+/* Write a program that inputs temperature and displays a message as follows:
+      Greater than 35                         Hot Day
+      Betweeen 25 and 35 (inclusive)          Pleasant Day
+      Less than 25                            Cool Day */
+      
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class Temperature 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		double temperature ;
+		
+		System.out.print( "Enter Temperature : " );
+		temperature = scanner.nextDouble();
+		
+		if ( temperature > 35 )
+		{
+			System.out.println( "Hot Day" );
+		}
+		
+		else if ( temperature >= 25 && temperature <= 35  )
+		{
+			System.out.println( "Pleasent Day" );
+		}
+		
+		else if ( temperature < 25 )
+		{
+			System.out.println( "Cool Day" );
+		}
+		
+		scanner.close();
+		
+	}
+}
