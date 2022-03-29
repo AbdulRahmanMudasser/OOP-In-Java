@@ -1,0 +1,138 @@
+/* Write a program that inputs a value and type of conversion. The prgoram should then display the output after conversion. The program should include the following 
+conversions :
+              1 cm          =   0.394 inches
+              1 liter       =   0.264 gallons
+              1 kilometer   =   0.622 miles
+              1 kilogram    =   2.2 pounds        */
+
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class Conversion 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int choice ;
+		double value ;
+		
+		System.out.println( "---Conversion Menu---" );
+		
+		System.out.println();
+		
+		System.out.println( "1.	Centimeters to Inches" );
+		System.out.println( "2.	Inches to Centimeters" );
+		System.out.println( "3.	Liters to Gallons" );
+		System.out.println( "4.	Gallons to Liters" );
+		System.out.println( "5.	Kilometers to Miles" );
+		System.out.println( "6.	Miles to Kilometers" );
+		System.out.println( "7.	Kilogram to Pounds" );
+		System.out.println( "8.	Ponuds to Kilograms" );
+		
+		System.out.println();
+		
+		System.out.print( "Enter Your Choice : " );
+		choice = scanner.nextInt();
+		
+		System.out.println();
+		
+		System.out.print( "Enter value : " );
+		value = scanner.nextDouble();
+		
+		System.out.println();
+		
+		switch ( choice )
+		{
+		case 1 :
+			
+			System.out.println( "---Centimeters To Inches---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Inches : " + ( value * 0.394 ) );
+			
+			break ;
+			
+		case 2 :
+			
+			System.out.println( "---Inches To Centimeters---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Centimeters : " + ( value / 0.394 ) );
+			
+			break ;
+			
+		case 3 :
+			
+			System.out.println( "---Liters To Gallons---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Gallons : " + ( value * 0.264 ) );
+			
+			break ;
+			
+		case 4 :
+			
+			System.out.println( "---Gallons To Liters---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Gallons : " + ( value / 0.264 ) );
+			
+			break ;
+			
+		case 5 : 
+			
+			System.out.println( "---Kilometers To Miles---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Miles : " + ( value * 0.622 ) );
+			
+			break ;
+			
+		case 6 :
+			
+			System.out.println( "---Miles To Kilometers---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Kilomters : " + ( value / 0.622 ) );
+			
+			break ;
+			
+		case 7 :
+			
+			System.out.println( "---Pounds To Kilograms---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Kilograms : " + ( value * 2.2 ) );
+			
+			break ;
+			
+		case 8 :
+			
+			System.out.println( "---Kilograms To Pounds---" );
+			
+			System.out.println();
+			
+			System.out.println( "In Pounds : " + ( value / 2.2 ) );
+			
+			break ;
+			
+		default :
+			
+			System.out.println( "Invalid Choice" );
+			
+			break ;
+		}
+		
+		scanner.close();
+		
+	}
+}
