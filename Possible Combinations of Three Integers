@@ -1,0 +1,65 @@
+/* Write a program that inputs three digits and displays all possible combinations of these digits */
+
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class PossibleCombinationOfThreeDigits 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int a , b , c ;
+		
+		System.out.print( "Enter a Number : " );
+		a = scanner.nextInt();
+		
+		System.out.print( "Enter a Number : " );
+		b = scanner.nextInt();
+		
+		System.out.print( "Enter a Number : " );
+		c = scanner.nextInt();
+		
+		System.out.print( "\nPossible Combinations : \n\n" );
+		
+		if ( ( a != b ) && ( b != c ) && ( c != a ) )
+		{
+			System.out.print( a + "" + b + "" + c + "\t" );
+			System.out.print( a + "" + c + "" + b + "\t" );
+			System.out.print( b + "" + a + "" + c + "\t" );
+			System.out.print( b + "" + c + "" + a + "\t" );
+			System.out.print( c + "" + a + "" + b + "\t" );
+			System.out.print( c + "" + b + "" + a );
+		}
+		
+		else if ( ( a == b ) && ( a == c ) )
+		{
+			System.out.print( a + "" + b + "" + c );
+		}
+		
+		else if ( ( a == b ) && ( b == a ) )
+		{
+			System.out.print( a + "" + b + "" + c + "\t" );
+			System.out.print( a + "" + c + "" + b + "\t" );
+			System.out.print( c + "" + b + "" + a );
+		}
+		
+		else if ( ( b == c ) && ( c == b ) )
+		{
+			System.out.print( a + "" + b + "" + c + "\t" );
+			System.out.print( b + "" + a + "" + c + "\t" );
+			System.out.print( c + "" + b + "" + a );
+		}
+		
+		else if ( ( a == c ) && ( c == a ) )
+		{
+			System.out.print( a + "" + b + "" + c + "\t" );
+			System.out.print( a + "" + c + "" + b + "\t" );
+			System.out.print( b + "" + c + "" + a );
+		}
+		
+		scanner.close();
+		
+	}
+}
