@@ -1,0 +1,28 @@
+/* Write a prgram that inputs two integers from the user and prints their sum on screen */
+
+package practiceprograms ;
+
+import java.util.Scanner ;
+
+public class SumOfTwoIntegers 
+{
+  public static void main ( String [] args )
+  {
+    Scanner scanner = new Scanner ( System.in ) ;
+    
+    int x , y , sum ;
+    
+    System.out.println( "Enter value of x : " ) ;
+    x = scanner.nextInt() ;
+    
+    System.out.println( "Enter value of y : " ) ;
+    y = scanner.nextInt() ;
+    
+    sum = x + y ;
+    
+    System.out.println( "Sum is : " + sum ) ;
+    
+    scanner.close() ;
+    
+    }
+}
