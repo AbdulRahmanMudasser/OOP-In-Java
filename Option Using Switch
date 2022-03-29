@@ -1,0 +1,55 @@
+/* Rewrite the following if , if else if , else statement as a switch statement */
+
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class OptionUsingSwitch 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int option ;
+		
+		System.out.print( "Enter Option Number : " );
+		option = scanner.nextInt();
+		
+		switch ( option )
+		{
+		
+		case 1 :
+			
+			System.out.println( "This was Option 1" );
+			
+			break ;
+			
+		case 2 :
+			
+			System.out.println( "This was Option 2" );
+			
+			break ;
+			
+		case 3 :
+			
+			System.out.println( "This was Option 3" );
+			
+			break ;
+			
+		case 4 :
+			
+			System.out.println( "This was Option 4" );
+			
+			break ;
+			
+		case 5 :
+			
+			System.out.println( "This was Option 5" );
+			
+			break ;
+		}
+		
+		scanner.close();
+		
+	}
+}
