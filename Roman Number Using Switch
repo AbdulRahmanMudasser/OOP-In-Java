@@ -1,0 +1,49 @@
+/* Rewrite the following if , if else , else statement as a switch statement */ 
+
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class RomanNumberSwitch 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		char ch ;
+		
+		System.out.print( "Enter a Character : " );
+		ch = scanner.next().charAt(0);
+		
+		switch ( ch )
+		{
+		case 'I' :
+		case 'i' :
+			
+			System.out.println( "Roman Number 1" );
+			
+			break ;
+			
+		case 'V' :
+		case 'v' :
+			
+			System.out.println( "Roman Number 2" );
+			
+			break ;
+			
+		case 'X' :
+		case 'x' :
+			
+			System.out.println( "Roman Number 3" );
+			
+			break ;
+			
+		default :
+			
+			System.out.println( "Invalid Number" );
+		}
+		
+		scanner.close();
+		
+	}
+}
