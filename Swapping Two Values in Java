@@ -1,0 +1,38 @@
+/* Write a program that inputs two numbers, swaps the values and then displays them */
+
+import java.util.Scanner;
+
+public class Swapping 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int x , y , temp ;
+		
+		System.out.print( "Enter value of x : " );
+		x = scanner.nextInt();
+		
+		System.out.print( "Enter value of y : " );
+		y = scanner.nextInt();
+		
+		System.out.println();
+		
+		System.out.println( "Before Swapping" );
+		System.out.println( "Value of x : " + x );
+		System.out.println( "Value of y : " + y );
+		
+		temp = x ;
+		x = y ;
+		y = temp ;
+		
+		System.out.println();
+		
+		System.out.println( "After Swapping" );
+		System.out.println( "Value of x : " + x );
+		System.out.println( "Value of y : " + y );
+		
+		scanner.close();
+		
+	}
+}
