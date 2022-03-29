@@ -1,0 +1,31 @@
+/* Write a program that inputs a number and displays whether it is even or odd using logical operaoter */
+
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class EvenOddUsingNotOperator 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int number ;
+		
+		System.out.print( "Enter a number : " );
+		number = scanner.nextInt();
+		
+		if ( ! ( number % 2 == 0 ) )
+		{
+			System.out.println( "You entered an odd number" );
+		}
+		
+		else
+		{
+			System.out.println( "You entered an even number" );
+		}
+		
+		scanner.close();
+		
+	}
+}
