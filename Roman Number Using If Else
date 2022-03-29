@@ -1,0 +1,41 @@
+/* Rewrite the following if , if else , else statement as a switch statement */ 
+
+package practiceprograms;
+
+import java.util.Scanner;
+
+public class IfElseIntoSwitch 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		char value ;
+		
+		System.out.print( "Enter a value : " );
+		value = scanner.next().charAt(0);
+		
+		if ( ( value == 'I' ) || ( value == 'i' ) )
+		{
+			System.out.println( "Roman Number 1" );
+		}
+		
+		else if ( ( value == 'V' ) || ( value == 'v' ) )
+		{
+			System.out.println( "Roman Number 2" );
+		}
+		
+		else if ( ( value == 'X' ) || ( value == 'x' ) )
+		{
+			System.out.println( "Roman Number 3" );
+		}
+		
+		else 
+		{
+			System.out.println( "Invalid Number" );
+		}
+		
+		scanner.close();
+		
+	}
+}
