@@ -1,0 +1,78 @@
+package methods;
+
+public class Teacher 
+{
+	String name ;
+	int age ;
+	String qualification ;
+	String email ;
+	long phone ;
+	
+	public static void main ( String [] args )
+	{
+		Teacher t1 = new Teacher () ;
+		
+		t1.setname ( "Miss Hifza Saba" ) ;
+		t1.setage ( 31 ) ;
+		t1.setqualification ( "MA English" ) ;
+		t1.setemail ( "hifzasaba1@gmail.com" ) ;
+		t1.setphone( 5878349 );
+		
+		System.out.println( "Name : " + t1.getname() );
+		System.out.println( "Age : " + t1.getage() );
+		System.out.println( "Qualification : " + t1.getqualification() );
+		System.out.println( "Email Address : " + t1.getemail() );
+		System.out.println( "Phone Number : " + t1.getphone() );
+		
+	}
+	
+	void setname ( String n )
+	{
+		this.name = n ;
+	}
+	
+	String getname (  )
+	{
+		return this.name ;
+	}
+	
+	void setage ( int a )
+	{
+		this.age = a ;
+	}
+	
+	int getage (  )
+	{
+		return this.age ;
+	}
+	
+	void setqualification ( String q )
+	{
+		this.qualification = q ;
+	}
+	
+	String getqualification (  )
+	{
+		return this.qualification ;
+	}
+	
+	void setemail ( String e )
+	{
+		this.email = e ;
+	}
+	
+	String getemail (  )
+	{
+		return this.email ;
+	}
+	
+	void setphone ( long p )
+	{
+		this.phone = p ;
+	}
+	
+	long getphone (  )
+	{
+		return this.phone ;
+	}
+}
