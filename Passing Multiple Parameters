@@ -1,0 +1,17 @@
+package methods;
+
+public class PassingMultipleParamtersToMethod 
+{
+	static void mymethod( String firstname , int age )
+	{
+		System.out.println( firstname + " Hussain " + " is " + age );
+	}
+	
+	public static void main ( String [] args )
+	{
+		mymethod( "Mudasser" , 45 );
+		mymethod( "Mubasher" , 40 );
+		mymethod( "Muzzamil" , 35 );
+	}
+
+}
