@@ -1,0 +1,18 @@
+package methods;
+
+public class CallingMethod 
+{
+	static void mymethod()
+	{
+		System.out.println( "I just got executed" );
+	}
+	
+	public static void main ( String [] args )
+	{
+    // Calling 
+    
+		mymethod();
+		mymethod();
+    
+	}
+}
