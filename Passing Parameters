@@ -15,8 +15,8 @@ public class PassingParametersToMethod
   
     // Calling Method
   
-		mymethod( "Mudasser" );
-		mymethod( "Mubashir" );
-		mymethod( "Muzzamil" );
+		mymethod( "Mudasser" );		// Argument
+		mymethod( "Mubashir" );		// Argument
+		mymethod( "Muzzamil" );		// Argument
 	}
 }
