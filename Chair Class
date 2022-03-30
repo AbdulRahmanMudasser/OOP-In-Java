@@ -1,0 +1,65 @@
+package methods;
+
+public class Chair 
+{
+	String colour ;
+	int price ;
+	float height ;
+	String type ;
+	
+	public static void main ( String [] args )
+	{
+		Chair c1 = new Chair () ;
+		
+		c1.setColour( "Red" );
+		c1.setPrice( 2500 );
+		c1.setHeight( 5.6f );
+		c1.setType( "Dinning Chair" );
+		
+		System.out.println( "Colour : " + c1.getColour () );
+		System.out.println( "Price : " + c1.getPrice () );
+		System.out.println( "Height : " + c1.getHeight() );
+		System.out.println( "Type : " + c1.getType() );
+		
+	}
+	
+	void setColour ( String c )
+	{
+		this.colour = c ;
+	}
+	
+	String getColour (  )
+	{
+		return colour ;
+	}
+	
+	void setPrice ( int p )
+	{
+		this.price = p ;
+	}
+	
+	int getPrice (  )
+	{
+		return this.price ;
+	}
+	
+	void setHeight ( float h )
+	{
+		this.height = h ;
+	}
+	
+	float getHeight (  )
+	{
+		return this.height ;
+	}
+	
+	void setType ( String t )
+	{
+		this.type = t ;
+	}
+	
+	String getType (  )
+	{
+		return this.type ;
+	}
+}
