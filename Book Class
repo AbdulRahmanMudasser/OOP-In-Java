@@ -1,0 +1,78 @@
+package methods;
+
+public class Book 
+{
+	int price ;
+	int pages ;
+	String author ;
+	String type ;
+	String genre ;
+	
+	public static void main ( String [] args )
+	{
+		Book b1 = new Book () ;
+		
+		b1.setPrice ( 1500 ) ;
+		b1.setPages ( 800 ) ;
+		b1.setAuthor ( "Hollen Cower" ) ;
+		b1.setType ( "Hard Copy" ) ;
+		b1.setGenre ( "Adult Fantasy" ) ;
+		
+		System.out.println( "Price : " + b1.getPrice () );
+		System.out.println( "Pages : " + b1.getPages () );
+		System.out.println( "Author : " + b1.getAuthor () );
+		System.out.println( "Type : " + b1.getType () );
+		System.out.println( "Genre : " + b1.getGenre () );
+		
+	}
+	
+	void setPrice ( int p )
+	{
+		this.price = p ;
+	}
+	
+	int getPrice (  )
+	{
+		return this.price ;
+	}
+	
+	void setPages ( int p )
+	{
+		this.pages = p ;
+	}
+	
+	int getPages (  )
+	{
+		return this.pages ;
+	}
+	
+	void setAuthor ( String a )
+	{
+		this.author = a ;
+	}
+	
+	String getAuthor (  )
+	{
+		return this.author ;
+	}
+	
+	void setType ( String t )
+	{
+		this.type = t ;
+	}
+	
+	String getType (  )
+	{
+		return this.type ;
+	}
+	
+	void setGenre ( String g )
+	{
+		this.genre = g ;
+	}
+	
+	String getGenre (  )
+	{
+		return this.genre ;
+	}
+}
