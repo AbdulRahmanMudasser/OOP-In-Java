@@ -1,0 +1,14 @@
+package methods;
+
+public class RetrunOneValue 
+{
+	static int mymethod( int value )
+	{
+		return ( 5 + value ) ;
+	}
+	
+	public static void main ( String [] args )
+	{
+		System.out.println( mymethod( 5 ) ); 
+	}
+}
