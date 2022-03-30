@@ -1,0 +1,52 @@
+package methods;
+
+public class Employee 
+{
+	String EmployeeNumber ;
+	String EmployeeName ;
+	int EmployeeAge ;
+	
+	public static void main ( String [] args )
+	{
+		Employee e1 = new Employee (  ) ;
+		
+		e1.setEmployeeNumber( "3421" );
+		e1.setEmployeeName( "Burak Ozkivit" );
+		e1.setEmployeeAge( 34 );
+		
+		System.out.println( "Employee Number : " + e1.getEmployeeNumber() );
+		System.out.println( "Employee Name : " + e1.getEmployeeName() );
+		System.out.println( "Employee Age : " + e1.getEmployeeAge() );
+		
+	}
+	
+	void setEmployeeNumber ( String num )
+	{
+		this.EmployeeNumber = num ;
+	}
+	
+	String getEmployeeNumber (  )
+	{
+		return this.EmployeeNumber ;
+	}
+	
+	void setEmployeeName ( String n )
+	{
+		this.EmployeeName = n ;
+	}
+	
+	String getEmployeeName (  )
+	{
+		return this.EmployeeName ;
+	}
+	
+	void setEmployeeAge ( int a )
+	{
+		this.EmployeeAge = a ;
+	}
+	
+	int getEmployeeAge (  )
+	{
+		return this.EmployeeAge ;
+	}
+}
