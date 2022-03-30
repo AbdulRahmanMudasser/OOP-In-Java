@@ -1,0 +1,14 @@
+package methods;
+
+public class RetruningTwoValues 
+{
+	static int mymethod ( int x , int y )
+	{
+		return ( x + y ) ;
+	}
+	
+	public static void main ( String [] args )
+	{
+		System.out.println( "Sum is " + mymethod ( 5 , 10 ) );
+	}
+}
