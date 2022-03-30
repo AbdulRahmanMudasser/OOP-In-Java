@@ -1,0 +1,65 @@
+package methods;
+
+public class Table 
+{
+	String colour ;
+	String type ;		// Type : dining , folding , coffee , bar table
+	int price ;
+	float height ;
+	
+	public static void main ( String [] args )
+	{
+		Table t = new Table() ;
+		
+		t.setColour( "Brown" ) ;
+		t.setType( "Folding" ) ;
+		t.setPrice( 3000 ) ;
+		t.setHeight( 5.32f ) ;
+		
+		System.out.println( "Colour : " + t.getColour() );
+		System.out.println( "Tpye : " + t.getType() );
+		System.out.println( "Price : " + t.getPrice() );
+		System.out.println( "Height : " + t.getHeight() );
+		
+	}
+	
+	void setColour ( String c )
+	{
+		this.colour = c ;
+	}
+	
+	String getColour (  )
+	{
+		return this.colour ;
+	}
+	
+	void setType ( String t )
+	{
+		this.type = t ;
+	}
+	
+	String getType (  )
+	{
+		return this.type ;
+	}
+	
+	void setPrice ( int p )
+	{
+		this.price = p ;
+	}
+	
+	int getPrice (  )
+	{
+		return this.price ;
+	}
+	
+	void setHeight ( float h )
+	{
+		this.height = h ;
+	}
+	
+	float getHeight (  )
+	{
+		return this.height ;
+	}
+}
