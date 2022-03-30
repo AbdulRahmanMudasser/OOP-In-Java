@@ -1,0 +1,52 @@
+package methods;
+
+public class Student 
+{
+	String name ;
+	int rollNumber ;
+	int age ;
+	
+	public static void main ( String [] args )
+	{
+		Student s1 = new Student () ;
+		
+		s1.setname( "Abdul Rahman" );
+		s1.setrollNumber( 86 );
+		s1.setage( 18 );
+		
+		System.out.println( "Name : " + s1.getname() );
+		System.out.println( "Roll Number : " + s1.getrollNumber() );
+		System.out.println( "Age : " + s1.getage() );
+		
+	}
+	
+	void setname ( String n )
+	{
+		this.name = n ;
+	}
+	
+	String getname (  )
+	{
+		return this.name ;
+	}
+	
+	void setrollNumber ( int r )
+	{
+		this.rollNumber = r ;
+	}
+	
+	int getrollNumber (  )
+	{
+		return this.rollNumber ;
+	}
+	
+	void setage ( int a )
+	{
+		this.age = a ;
+	}
+	
+	int getage (  )
+	{
+		return this.age ;
+	}
+}
