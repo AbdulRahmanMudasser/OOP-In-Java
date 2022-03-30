@@ -1,0 +1,22 @@
+package methods;
+
+public class PassingParametersToMethod 
+{
+
+  // Passing Parameter
+
+	static void mymethod ( String fullname )
+	{
+		System.out.println( fullname + " Hussain" );
+	}
+	
+	public static void main ( String [] args )
+	{
+  
+    // Calling Method
+  
+		mymethod( "Mudasser" );
+		mymethod( "Mubashir" );
+		mymethod( "Muzzamil" );
+	}
+}
