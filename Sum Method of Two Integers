@@ -1,0 +1,16 @@
+/* Write a program in Java and make a method sum of two integers */
+
+package methods;
+
+public class SumTwoIntegers 
+{
+	public static void main ( String [] args )
+	{
+		System.out.println( "Sum is : " + sum ( 10 ,20 ) );
+	}
+	
+	static int sum ( int a , int b )
+	{
+		return ( a + b ) ;
+	}
+}
