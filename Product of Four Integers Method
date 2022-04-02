@@ -1,0 +1,29 @@
+package methods;
+
+public class MethodTwoThreeFourProduct 
+{
+	int product ( int a , int b , int c , int d )
+	{
+		return ( a * b * c * d ) ;
+	}
+	
+	int product ( int a , int b , int c )
+	{
+		return ( a * b * c ) ;
+	}
+	
+	int product ( int a , int b )
+	{
+		return ( a * b ) ;
+	}
+	
+	public static void main ( String [] args )
+	{
+		
+		MethodTwoThreeFourProduct m1 = new MethodTwoThreeFourProduct() ;
+		
+		System.out.println( "Product of First Two Integers : " + m1.product( 2 , 3 ) );
+		System.out.println( "Product of First Three Integers : " + m1.product( 2 , 3 , 4 ) );
+		System.out.println( "Product of Four Integers : " + m1.product( 2 , 3 , 4 , 5 ) );
+	}
+}
