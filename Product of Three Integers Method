@@ -1,0 +1,14 @@
+package methods;
+
+public class ProductOfThreeIntegers 
+{
+	static int product ( int a , int b , int c )
+	{
+		return ( a * b * c ) ;
+	}
+	
+	public static void main ( String [] args )
+	{
+		System.out.println( "Product of Three Integers : " + product ( 10 , 20 , 30 ) );
+	}
+}
