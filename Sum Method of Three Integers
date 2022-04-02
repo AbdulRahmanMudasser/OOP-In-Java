@@ -1,0 +1,14 @@
+package methods;
+
+public class SumThreeIntegers 
+{
+	static int sum ( int a , int b , int c )
+	{
+		return ( a + b + c ) ;
+	}
+	
+	public static void main ( String [] args )
+	{
+		System.out.println( "Sum of three integers : " + sum ( 10 , 20 , 30 ) );
+	}
+}
