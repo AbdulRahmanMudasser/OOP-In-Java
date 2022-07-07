@@ -1,0 +1,84 @@
+
+public class Car 										// outer class
+{
+	String carName ;
+	String carType ;
+	
+	Car ( String carName , String carType )
+	{
+		this.carName = carName ;
+		this.carType = carType ;
+	}
+	
+	// end of car constructor
+	
+	public void setCarName ( String carName )
+	{
+		this.carName = carName ;
+	}
+	
+	public String getCarName ()
+	{
+		return this.carName ;
+	}
+	
+	// end of car name setter and getter
+	
+	public void setCarType ( String carType )
+	{
+		this.carType = carType ;
+	}
+	
+	public String getCarType ()
+	{
+		return this.carType ;
+	}
+	
+	// end of car type setter and getter
+	
+	class Engine 										// inner class
+	{
+		String engineType ;
+		
+		public void setEngineType ( String engineType )
+		{
+			this.engineType = engineType ;
+		}
+		
+		public String getEngineType ()
+		{
+			return this.engineType ;
+		}
+		
+		// end of engine type setter and getter
+		 
+		public void setEngine ()
+		{
+			if ( Car.this.carType.equals( "4WD" ) )
+			{
+				if ( Car.this.carName.equals( "Toyota" ) )
+				{
+					setEngineType( "Smaller" );
+				}
+				
+				else
+				{
+					setEngineType( "Bigger" );
+				}
+			}
+			
+			else 
+			{
+				setEngineType( "Bigger" );
+			}
+		}
+		
+		// end of engine method
+		
+	}
+	
+	// end of inner class
+
+}
+
+// end of outer class
