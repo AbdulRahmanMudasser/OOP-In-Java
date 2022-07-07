@@ -1,0 +1,15 @@
+package outerclass.and.staticinnerclasss;
+
+public class Main 
+{
+	public static void main ( String [] args )
+	{
+		OuterClass outer = new OuterClass ();
+		
+		OuterClass.InnerClass inner = new OuterClass.InnerClass() ;
+		
+		System.out.println( "Outer Class : " + outer.a );
+		
+		System.out.println( "Inner Abstract Class : " + inner.b ); 
+	}
+}
