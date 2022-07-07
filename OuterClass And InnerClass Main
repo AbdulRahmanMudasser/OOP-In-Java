@@ -1,0 +1,11 @@
+
+public class Main 
+{
+	public static void main ( String [] args )
+	{
+		OuterClass o = new OuterClass ();
+		OuterClass.InnerClass i = o.new InnerClass ();
+		
+		System.out.println( o.a + " " + i.b );
+	}
+}
