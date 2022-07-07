@@ -1,0 +1,9 @@
+public class ForLoop 
+{
+	public static void main ( String [] args )
+	{
+		ForLoopMain p1 = new ForLoopMain ();
+		
+		p1.printHelloWorld();
+	}
+}
