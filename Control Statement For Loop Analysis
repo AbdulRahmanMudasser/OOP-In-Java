@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Analysis 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int passes = 0 ;
+		int failures = 0 ;
+		int result = 0 ;
+		
+		for ( int studentCounter = 1 ; studentCounter <= 10 ; studentCounter ++ )
+		{
+			System.out.print( "Enter Result ( 1 for Pass or 2 for Fail ) : " );
+			result = scanner.nextInt();
+			
+			if ( result == 1 )
+			{
+				passes ++ ;
+			}
+			
+			else
+			{
+				failures ++ ;
+			}
+		}
+		
+		System.out.println();
+		
+		System.out.println( "Passes : " + passes );
+		System.out.println( "Failures : " + failures );
+		
+		System.out.println();
+		
+		if ( passes >= 8 )
+		{
+			System.out.println( "Congrats Teacher" );
+		}
+		
+		scanner.close();
+		
+	}
+}
