@@ -1,0 +1,14 @@
+package controlstatements.part1;
+
+// incrementing by 2
+
+public class ForLoopExercise1A 
+{
+	public static void main ( String [] args )
+	{
+		for ( int i = 2 ; i <= 100 ; i += 2 )
+		{
+			System.out.println( i + " " );
+		}
+	}
+}
