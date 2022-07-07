@@ -1,0 +1,60 @@
+
+
+public class Calculator 
+{
+	public int add ( int ... n )			// this method will add parameters that you passed 
+	{
+		int sum = 0 ;
+		
+		for ( int i : n )
+		{
+			sum = sum + i ;
+		}
+		
+		return sum ;
+	}
+	
+	// end of int add method
+	
+	public double add ( double ... n )		// this method will add parameters that you passed
+	{
+		double sum = 0 ;
+		
+		for ( double i : n )
+		{
+			sum = sum + i ;
+		}
+		
+		return sum ;
+	}
+	
+	// end of double add method
+	
+	public int subtract ( int ... n )
+	{
+		int subtract = 0 ;
+		
+		for ( int i : n )
+		{
+			subtract = subtract - i ;
+		}
+		
+		return subtract ;
+	}
+	
+	// end of int subtract method
+	
+	public double subtract ( double ... n )
+	{
+		double subtract = 0 ;
+		
+		for ( double i : n )
+		{
+			subtract = subtract - i ;
+		}
+		
+		return subtract ;
+	}
+	
+	// end of subtract method
+}
