@@ -1,0 +1,66 @@
+
+import java.util.Scanner;
+
+public class Calculator 
+{
+	public static void main ( String [] args )
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int num1 , num2 ;
+		char operator ;
+		
+		System.out.print( "Enter first number : " );
+		num1 = scanner.nextInt();
+		
+		System.out.print( "Enter second number : " );
+		num2 = scanner.nextInt();
+		
+		System.out.print( "Enter an operator ( + , - , * , / , % ) : " );
+		operator = scanner.next().charAt(0);
+		
+		System.out.println();
+		
+		if ( operator == '+' || operator == '-' || operator == '*' || operator == '/' || operator == '%' )
+		{
+			calculator ( num1 , num2 , operator );
+		}
+		
+		else
+		{
+			System.out.println( "Invalid Operator Please Try from mentioned operators" );
+		}
+
+		scanner.close();
+	}
+	
+	static void calculator ( int num1 , int num2 , char operator )
+	{
+
+		switch ( operator )
+		{
+		case '+' :
+			System.out.println( "Sum of " + num1 +  " and " + num2 + " is : " + ( num1 + num2 ) );
+			break ;
+			
+		case '-' :
+			System.out.println( "Difference of " + num1 + " and " + num2 + " is : " + ( num1 - num2 ) );
+			break ;
+			
+		case '*' :
+			System.out.println( "Product of " + num1 + " and " + num2 + " is : " + ( num1 * num2 ) );
+			break ;
+			
+		case '/' :
+			System.out.println( "Division of " + num1 + " by " + num2 + " is : " + ( num1 / num2 ) );
+			break ;
+			
+		case '%' :
+			System.out.println( "Remainder of " + num1 + " by " + num2 + " is : " + ( num1 % num2 ) );
+			break ;
+			
+			default :
+				System.out.println( "Invalid Operator" );
+		}
+	}
+}
