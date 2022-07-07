@@ -1,0 +1,12 @@
+// in backward counting the number divided by 3 will be printed
+
+public class ForLoopExercise2D 
+{
+	public static void main ( String [] args )
+	{
+		for ( int i = 100 ; i >= 1 ; i -= 3 )
+		{
+			System.out.println( i + " " );
+		}
+	}
+}
