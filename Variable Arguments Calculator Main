@@ -1,0 +1,14 @@
+public class Main 
+{
+	public static void main ( String [] args )
+	{
+		Calculator calculator = new Calculator ();
+		
+		System.out.println( "Sum : " +  calculator.add( 3.5 , 6.6 , 10.45 , 15.34  ) );	
+		
+		// you can pass many parameters
+		// this will go there as a array
+		
+		System.out.println( "Difference : " + calculator.subtract( 10 , 4 , 34 ) );
+	}
+}
