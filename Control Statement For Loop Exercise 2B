@@ -1,0 +1,15 @@
+// in incrementing the number divided by 3 will be printed
+
+public class ForLoopExercise2B 
+{
+	public static void main ( String [] args )
+	{
+		for ( int i = 1 ; i <= 100 ; i ++ )
+		{
+			if ( i % 3 == 0 )
+			{
+				System.out.println( i + " " );
+			}
+		}
+	}
+}
