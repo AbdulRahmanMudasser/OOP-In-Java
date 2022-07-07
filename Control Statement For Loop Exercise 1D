@@ -1,0 +1,15 @@
+// in backward counting the number divided by 2 will be printed
+
+public class ForLoopExercise1D 
+{
+	public static void main ( String [] args )
+	{
+		for ( int i = 100 ; i >= 1 ; i -- )
+		{
+			if ( i % 3 == 0 )
+			{
+				System.out.println( i + " " );
+			}
+		}
+	}
+}
