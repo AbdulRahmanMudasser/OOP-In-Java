@@ -1,0 +1,29 @@
+
+public class Main 
+{
+	public static void main ( String [] args )
+	{
+		Car car = new Car( "Toyota" , "4WD" );
+		
+		Car.Engine engine = car.new Engine();
+		
+		engine.setEngine();
+		
+		System.out.println( "Car Name : " + car.getCarName() );
+		System.out.println( "Car Type : " + car.getCarType() );
+		System.out.println( "Engine Type : " + engine.getEngineType() );
+		
+		System.out.println();
+		
+		Car car2 = new Car ( "Mazda" , "8WD" );
+		
+		Car.Engine engine2 = car2.new Engine();
+		
+		engine2.setEngine();
+		
+		System.out.println( "Car Name : " + car2.getCarName() );
+		System.out.println( "Car Type : " + car2.getCarType() );
+		System.out.println( "Engine Type : " + engine2.getEngineType() );
+		
+	}
+}
