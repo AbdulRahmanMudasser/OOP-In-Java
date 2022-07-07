@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class GradeBook 
+{
+	String courseName ;
+	
+	public GradeBook ( String CourseName )
+	{
+		this.courseName = CourseName ;
+	}
+	
+	public void setCourseName ( String n )
+	{
+		this.courseName = n ;
+	}
+	
+	public String getCourseName ()
+	{
+		return this.courseName ;
+	}
+	
+	public void displayMessage ()
+	{
+		System.out.println( "\nWelcome to the gradebook for \n" + getCourseName() );
+	}
+	
+	public void determineClassAverage ()
+	{
+		Scanner scanner = new Scanner ( System.in );
+		
+		int total ;
+		int average ;
+		int gradeCounter ;
+		int grade ;
+		
+		total = 0 ;
+		gradeCounter = 1 ;
+		
+		System.out.println();
+		
+		while ( gradeCounter <= 10 )
+		{
+			System.out.print( "Enter Grade : " );
+			grade = scanner.nextInt() ;
+			
+			total = total + grade ;
+			
+			gradeCounter = gradeCounter + 1 ;
+		}
+		
+		average = total / 10 ;
+		
+		System.out.println( "\nTotal of all 10 grade : " + total );
+		
+		System.out.println( "Class Average : " + average );
+		
+		scanner.close();
+	}
+}
