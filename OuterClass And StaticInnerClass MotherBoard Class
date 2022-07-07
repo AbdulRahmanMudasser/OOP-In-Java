@@ -1,0 +1,46 @@
+
+public class MotherBoard					// outer class
+{
+	static class USB 						// static inner class
+	{
+		int usb2 = 2 ;
+		int usb3 = 1 ;
+		
+		public int getTotalPorts ()
+		{
+			return ( usb2 + usb3 ) ;
+		}
+		
+		// end of total ports method
+	}
+	
+	static class ROM 
+	{
+		double price ;
+		String manufacturer ;
+		
+		public void setPrice ( double price )
+		{
+			this.price = price ;
+		}
+		
+		public double getPrice ()
+		{
+			return this.price ;
+		}
+		
+		// end of price setter and getter
+		
+		public void setManufacturer ( String manufacturer )
+		{
+			this.manufacturer = manufacturer ;
+		}
+		
+		public String getManufacturer ()
+		{
+			return this.manufacturer ;
+		}
+		
+		// end of manufacturer setter and getter
+	}
+}
