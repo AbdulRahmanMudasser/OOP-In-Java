@@ -1,0 +1,91 @@
+
+public class CPU						// outer class
+{
+	double price ;
+	
+	public void setPrice ( double price )
+	{
+		this.price = price ;
+	}
+	
+	public double getPrice ()
+	{
+		return this.price ;
+	}
+	
+	// end of price setter and getter 
+	
+	class Processor						// inner class
+	{
+		double cores ;
+		String manufacturer ;
+		
+		public void setCores ( double cores )
+		{
+			this.cores = cores ;
+		}
+		
+		public double getCores ()
+		{
+			return this.cores ;
+		}
+		
+		// end of cores setter and getter 
+		
+		public void setManufacturer ( String manufacturer )
+		{
+			this.manufacturer = manufacturer ;
+		}
+		
+		public String getManufacturer ()
+		{
+			return this.manufacturer ;
+		}
+		
+		// end of manufacturer setter and getter
+		
+		public double getCache ()
+		{
+			return 4.5 ;
+		}
+		
+		// end of cache setter and getter
+	}
+	
+	protected class RAM					// nested inner class
+	{
+		double memory ;
+		String manufacturer ;
+		
+		public void setMemory ( double memory )
+		{
+			this.memory = memory ;
+		}
+		
+		public double getMemory ()
+		{
+			return this.memory ;
+		}
+		
+		// end of memory setter and getter
+		
+		public void setManufacturer ( String manufacturer )
+		{
+			this.manufacturer = manufacturer ;
+		}
+		
+		public String getManufacturer ()
+		{
+			return this.manufacturer ;
+		}
+		
+		// end of manufacturer setter and getter
+		
+		public double getRamSpeed ()
+		{
+			return 5.5 ;
+		}
+		
+		// end of ramspeed setter and getter
+	}
+}
