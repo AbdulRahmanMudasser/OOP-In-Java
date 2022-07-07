@@ -1,0 +1,10 @@
+public class GradeBookTest 
+{
+	public static void main ( String [] args )
+	{
+		GradeBook g1 = new GradeBook ( "COSC 1102 Object Oriented Language" ) ;
+		
+		g1.displayMessage();
+		g1.determineClassAverage();
+	}
+}
