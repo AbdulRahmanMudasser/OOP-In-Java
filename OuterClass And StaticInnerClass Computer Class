@@ -1,0 +1,21 @@
+package outerclass.and.staticinnerclasss;
+
+public class Computer 
+{
+	public static void main ( String [] args )
+	{
+		 // create an object of the static nested class
+	     // using the name of the outer class
+		
+		MotherBoard.USB usb = new MotherBoard.USB();
+		
+		MotherBoard.ROM rom = new MotherBoard.ROM();
+		
+		rom.setPrice( 3000 );
+		rom.setManufacturer( "GracileIT" );
+		
+		System.out.println( "Total USB Ports : " + usb.getTotalPorts() );
+		System.out.println( "Rom Price : " + rom.getPrice() );
+		System.out.println( "Rom Manufacturer : " + rom.getManufacturer() );
+	}
+}
