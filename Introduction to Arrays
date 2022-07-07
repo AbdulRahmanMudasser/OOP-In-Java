@@ -1,0 +1,39 @@
+package arrays;
+
+import java.util.Arrays;		// for array methods
+
+public class Array 
+{
+	public static void main ( String [] args )
+	{
+		// how to declare an array
+		
+		// One Method
+		int [] userAge ;
+		userAge = new int [] { 1 , 2 , 3 , 4 , 5 };
+		
+		// Second Method
+		int [] userAge2 = new int [] { 1 , 2 , 3 , 4 , 5 };
+		
+		// It can also be written as
+		int [] userAge3 = { 1 , 2 , 3 , 4 , 5 };
+		
+		// we declare a size of 5 elements and the array will be initialized with default values 0
+		int [] userAge4 = new int [ 5 ];
+		
+		// array methods
+		// you have to import java.util.Arrays
+		
+		// sort() 
+		// the sort method allows us to sort an array
+		
+		int [] numbers = { -1 , 0 , 4 , 2 , 8 , -5 , 10 };
+		Arrays.sort( numbers );
+		
+		// The array will be sorted in ascending order
+		// The sort() method does not return a new array. It simply modifies the array that is passed in
+		
+		System.out.println( Arrays.toString( numbers ) );
+		
+	}
+}
